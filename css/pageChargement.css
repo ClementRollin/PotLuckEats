@@ -1,0 +1,42 @@
+body {
+    height: 100vh;
+    background-color: #30A0E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 50%;
+}
+
+h1 {
+    color: white;
+    font-family: "ff-prater-block-web";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.animation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@-moz-keyframes spin {
+    100% { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+.tourne {
+    -webkit-animation: spin 0.5s linear infinite;
+    -moz-animation: spin 0.5s linear infinite;
+    animation: spin 0.5s linear infinite;
+}
